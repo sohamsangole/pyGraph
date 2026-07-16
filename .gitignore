@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# PyGraph generated databases
+*.db
+*.sqlite
+*.sqlite3
+
+# PyGraph generated visualization files
+*.html
+
+# OS generated files
+.DS_Store
+Thumbs.db
