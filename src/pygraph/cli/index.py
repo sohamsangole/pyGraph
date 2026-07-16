@@ -1,12 +1,6 @@
 import argparse
-import sys
-import os
-
-# Add project root to sys.path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from parser.parser import ProjectParser
-from storage.sqlite import SQLiteStorage
+from pygraph.parser.parser import ProjectParser
+from pygraph.storage.sqlite import SQLiteStorage
 
 def main():
     parser = argparse.ArgumentParser(description="Index a Python project into PyGraph")

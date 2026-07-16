@@ -1,13 +1,7 @@
 import argparse
-import sys
-import os
-
-# Add project root to sys.path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from storage.sqlite import SQLiteStorage
-from retrieval.bfs import BFSGraphRetrieval
-from retrieval.ranking import Ranking
+from pygraph.storage.sqlite import SQLiteStorage
+from pygraph.retrieval.bfs import BFSGraphRetrieval
+from pygraph.retrieval.ranking import Ranking
 
 def main():
     parser = argparse.ArgumentParser(description="Query the PyGraph knowledge graph")

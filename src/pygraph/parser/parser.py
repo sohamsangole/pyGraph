@@ -1,7 +1,7 @@
 import ast
 import os
 from .visitors import GraphVisitor
-from storage.sqlite import SQLiteStorage
+from pygraph.storage.sqlite import SQLiteStorage
 
 class ProjectParser:
     def __init__(self, root_dir: str, storage: SQLiteStorage):

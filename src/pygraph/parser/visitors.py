@@ -1,6 +1,6 @@
 import ast
-from graph.node import Node
-from graph.edge import Edge
+from pygraph.graph.node import Node
+from pygraph.graph.edge import Edge
 
 class GraphVisitor(ast.NodeVisitor):
     def __init__(self, file_path: str):
